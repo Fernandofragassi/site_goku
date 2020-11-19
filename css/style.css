@@ -1,0 +1,423 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	font-family: "Roboto", calibri;
+	
+}
+
+header{  /*caixa que serve de background do menu superior*/
+	position: fixed; /* mantem a posição fixa no top*/
+	left: 0; /*margem da direita*/	
+	top: 0;	 /*margem do top*/
+	width: 100%; /* largura da div, 100% ocupa toda pagina independete do tamanho*/
+	height: 80px; /* largura*/
+	background-color: rgb(255, 174, 0); /*Cor de fundo*/
+	box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.5); /* efeito da sombra ( deslocamento-x, deslocamento-y, blur, cor) */
+	z-index: 1; /* propriedade para ordem de pilha, pilha maior está sempre na frente de um elemento com uma ordem de pilha inferior*/
+	border-bottom: 1px solid black /* borda do elemento */		
+}
+
+nav{  /*menu de navegação*/
+	width: 1100px; 
+	height: 80px;
+	margin: 0 auto;	/* margin 0 auto, faz o elemento ficar sempre ao centro da div pai */
+}
+
+.logo{  /*logo da pagina*/
+	margin-top: 6px;
+	float: left; /* faz o elemento ser retirado do fluxo normal, colocando ao lado direito ou esquerdo da div pai*/
+	height: 80px;
+}
+
+ul {  /*lista não ordenada*/
+	list-style-type: none; /* especifica o tipo de marcador da lista, none retira e deixa somento o texto */
+	margin-left: 290px;
+}
+
+li{  /*container da lista*/
+	float: left;
+}
+
+li a{  /*elementos da lista*/
+	display: block; /* especifica o comportamento do elemento, block: alinha um ao lado do outro */
+	position: relative; /* relative faz a borda não vazar da box */
+	color: black;
+	text-align: center; /* alinha o texto ao centro */
+	padding: 14px 16px; /* espaçamento interno */
+	text-decoration: none; /* retira toda decoração do texto, nesse exemplo a sublinhado */
+	margin-top: 25px;
+	text-transform: uppercase; /* deixa o texto em caixa alta */
+	font-size: 25px;
+	font-family: 'Anton', sans-serif;
+}
+
+li a:hover:before { /* efeito no botão da nav */
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+li a:before { /* efeito no botão da nav */
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  bottom: 10px;
+  left: 0;
+  background-color: red;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+
+/*################################# INDEX #####################*/
+
+main{ /* corpo so site, tirando o header e o footer */
+	margin: 150px auto 0 auto;
+	width: 1100px;
+	height: auto;
+}
+
+.img-goku{ /* imagem do goku do index */
+	margin: 3px 40px 0px 0px;
+	float: right; 
+}
+
+.cxhome{ /* caixa grande que serve de background*/
+	width: 1100px;
+	height: 550px;
+	margin-bottom: 80px;
+	background-color: red;
+	box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.4);
+}
+
+.cxmeio1{ /*caixa que segura a div dos elementos de texto*/
+	float: left;
+	width: 550px;
+	height: 400px;
+	margin: 25px 0 25px 25px; /* topo direita inferior esquerda */
+}
+
+.cxtext1{ /*caixa branca*/
+	width: 550px;
+	height: 500px;
+	background-color: white;
+	box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.4);
+}
+
+.cxtext1 h1{ /*tilulo*/
+	padding: 30px;
+	text-transform: uppercase;
+	text-decoration: underline red;
+}
+
+.cxtext1 p{ /*paragrafo*/
+	line-height: 1.3; /* espaçamento entre linhas */
+	font-size: 18px;
+	text-align: justify; /* faz o texto ficar alinhado em bloco*/
+	padding: 20px 30px 30px 30px;
+}
+
+.cxtext1 p:first-letter { /* faz a primeira letra do paragrafo ficar maior que o restante do texto*/
+  font-size: 2rem;
+  font-weight: bold;
+  color: black;
+}
+
+/*########################### LUTAS ####################*/
+
+.cx{ /*caixa que serve de background*/
+	width: 1100px;
+	height: 700px;
+	margin-bottom: 80px;
+	background-image: url(../image/gokupicoloback.jpg);
+	box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.4);
+}
+
+.cx2{ /*caixa que serve de background*/
+	width: 1100px;
+	height: 700px;
+	margin-bottom: 80px;
+	background-image: url(../image/gokupicoloraditzback.jpg);
+	box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.4);
+}
+
+.cx3{ /*caixa que serve de background*/
+	width: 1100px;
+	height: 700px;
+	margin-bottom: 80px;
+	background-image: url(../image/gokuvegetaback.jpg);
+	box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.4);
+}
+
+.cx4{ /*caixa que serve de background*/
+	width: 1100px;
+	height: 700px;
+	margin-bottom: 80px;
+	background-image: url(../image/gokufreezaback.jpg);
+	box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.4);
+}
+
+.cx5{ /*caixa que serve de background*/
+	width: 1100px;
+	height: 700px;
+	margin-bottom: 80px;
+	background-image: url(../image/gokubuuback.jpg);
+	box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.4);
+}
+
+.cx6{ /*caixa que serve de background*/
+	width: 1100px;
+	height: 700px;
+	margin-bottom: 80px;
+	background-image: url(../image/gokukefla.jpg);
+	box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.4);
+}
+
+.cxmeio{ /* caixa que serve para segurar a div de texto e fotos*/
+	float: left;
+	width: 650px;
+	height: 650px;
+	margin: 25px 0 25px 25px; /* topo direita inferior esquerda */
+}
+
+.cxtext{ /*caixa branca*/	
+	width: 635px;
+	height: 400px;
+	background-color: white;
+	box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.4);
+}
+
+.cxtext h2{ /*titulo do texto*/
+	padding: 30px;
+	text-transform: uppercase;
+	text-decoration: underline red;
+}
+
+.cxtext p{ /*paragrafo da div*/
+	line-height: 1.3;
+	font-size: 18px;
+	text-align: justify;
+	padding: 20px 30px 30px 30px;
+}
+
+.cxtext p:first-letter {
+  font-size: 2rem;
+  font-weight: bold;
+  color: black;
+}
+
+.cximgbox{ /*div que contem as caixas com imagens*/
+	display: inline-block; /* faz as 3 caixas ficaram uma do lado da outra */
+	width: 200px;
+	height: 200px;
+	margin: 50px 11px 25px 0px;
+	background-color: orange;
+	overflow: hidden; /* faz com que a imagem nao vaze do tamanho da caixa */
+	border: 1px solid black; /* borda de cada caixa*/
+	box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.4);
+}
+
+/*########################### TRANSFORMAÇOES ####################*/
+
+.cxtrans{ /*caixa que serve de background*/
+	width: 1100px;
+	height: 550px;
+	margin-bottom: 80px;
+	background-color: #1b2e5f;
+	box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.4);
+}
+
+.img-goku-trans{ /*imagem png que flutua a direita*/
+	margin: 0px 60px 0px 0px;
+	float: right;
+}
+
+.img-goku-trans2{ /*imagem png que flutua a direita*/
+	float: right;
+	margin: 10px 145px;
+}
+
+.img-goku-trans3{ /*imagem png que flutua a direita*/
+	float: right;
+	margin: 15px 165px;
+}
+
+.img-goku-trans4{ /*imagem png que flutua a direita*/
+	float: right;
+	margin: 15px 100px;
+}
+
+.img-goku-trans5{ /*imagem png que flutua a direita*/
+	float: right;
+	margin: 15px 140px;
+}
+
+.img-goku-trans6{ /*imagem png que flutua a direita*/
+	float: right;
+	margin: 15px 180px;
+}
+
+.img-goku-trans7{ /*imagem png que flutua a direita*/
+	float: right;
+	margin: 15px 160px;
+}
+
+.img-goku-trans8{ /*imagem png que flutua a direita*/
+	float: right;
+	margin: 15px 160px;
+}
+
+/*########################### FUSÕES ####################*/
+
+.img-goku-fu{ /*imagem png que flutua a direita*/
+	float: right;
+	margin: 25px 160px;
+}
+
+.img-goku-fu2{ /*imagem png que flutua a direita*/
+	float: right;
+	margin: 15px;
+}
+
+.img-goku-fu3{ /*imagem png que flutua a direita*/
+	float: right;
+	margin: 15px;
+}
+
+/*########################### TECNICAS ####################*/
+
+.cxtec{  /*caixa que serve de background*/
+	width: 1100px;
+	height: 550px;
+	margin-bottom: 80px;
+	background-image: url(../image/tecback1.jpg) ;
+	box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.4);
+}
+
+.cxtec1{  /*caixa que serve de background*/
+	width: 1100px;
+	height: 550px;
+	margin-bottom: 80px;
+	background-image: url(../image/tecback2.jpg) ;
+	box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.4);
+}
+
+.cxtec2{  /*caixa que serve de background*/
+	width: 1100px;
+	height: 550px;
+	margin-bottom: 80px;
+	background-image: url(../image/tecback4.jpg);
+	box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.4);
+}
+
+.cxtec3{  /*caixa que serve de background*/
+	width: 1100px;
+	height: 550px;
+	margin-bottom: 80px;
+	background-image: url(../image/tecback5.jpg) ;
+	box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.4);
+}
+
+/*########################### CONTATO ####################*/
+
+.contatobox{ /*caixa que serve de background*/
+	
+	width: 1100px;
+	height: 550px;
+	margin-bottom: 10px;
+	box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.4);
+}
+
+.contbox{ /*caixa que serve de background*/
+	background-color:rgb(255, 166, 0);
+	width: 1100px;
+	height: 350px;
+	margin-bottom: 80px;
+	box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.4);
+}
+
+.contatobox1{ /*que contem informações*/
+	background-color: white;
+	float: left;
+	padding: 30px;
+	margin: 20px;
+	width: 450px;
+	height: 247px;
+	font-size: 18px;
+	text-align: justify;
+	
+}
+
+.contatobox1 h1{  /*titulo da div*/
+	text-transform: uppercase;
+	text-decoration: underline red;	
+}
+
+#formulario{  /*container do formulario*/
+	margin: 20px;
+	height: 310px;
+	width: 500px;
+	float: left;
+}
+
+#formulario label{  /*texto*/
+	font-size: 18px;
+}
+
+#formulario div input{ /*input do nome e email*/
+	background-color: #fae5cc;
+	border: 1px solid #f2c085;
+	width: 500px;
+	height: 28px;
+	font-size: 15px;
+	
+}
+
+#formulario div textarea{ /*input do nome e email*/
+	background-color: #fae5cc;
+	border: 1px solid #f2c085;
+	width: 500px;
+	height: 135px;
+	font-size: 15px;
+	resize: none;	
+}
+
+#formulario .BOTAO{ /*div do botão*/
+	width: 85px;
+	height: 30px;
+	font-size: 16px;
+	color: #fff;
+	margin-right: 0px;
+	margin-left: 20px;
+	margin-bottom: 15px;
+	margin-top: 13px;
+	float: right;
+}
+
+#ENVIAR{ /*div do botão*/
+	background-color: darkgreen;
+	border: 1px solid #8bac7f;
+	cursor: pointer; /* faz aparecer a mãozinha quando passar em cima */
+}
+
+#LIMPAR { /*div do botão*/
+	background-color: red;
+	border: 1px solid #b89898;
+	cursor: pointer;
+}
+
+footer{ /*rodapé*/
+	width: 100%;
+	height: 150px;
+	background-color: #00002b;
+	text-align: center;
+	color: white;
+	padding-top: 50px;
+}
+
