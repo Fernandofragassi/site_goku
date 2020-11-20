@@ -2,7 +2,7 @@
 
 *{
 	margin: 0;
-	padding: 0;
+	padding: 0;	
 	font-family: "Roboto", calibri;
 	
 }
@@ -14,7 +14,7 @@ header{  /*caixa que serve de background do menu superior*/
 	width: 100%; /* largura da div, 100% ocupa toda pagina independete do tamanho*/
 	height: 80px; /* largura*/
 	background-color: rgb(255, 174, 0); /*Cor de fundo*/
-	box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.5); /* efeito da sombra ( deslocamento-x, deslocamento-y, blur, cor) */
+	box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.8); /* efeito da sombra ( deslocamento-x, deslocamento-y, blur, cor) */
 	z-index: 1; /* propriedade para ordem de pilha, pilha maior está sempre na frente de um elemento com uma ordem de pilha inferior*/
 	border-bottom: 1px solid black /* borda do elemento */		
 }
@@ -26,14 +26,14 @@ nav{  /*menu de navegação*/
 }
 
 .logo{  /*logo da pagina*/
-	margin-top: 6px;
+	
+	margin-top: 5px;
 	float: left; /* faz o elemento ser retirado do fluxo normal, colocando ao lado direito ou esquerdo da div pai*/
-	height: 80px;
 }
 
 ul {  /*lista não ordenada*/
 	list-style-type: none; /* especifica o tipo de marcador da lista, none retira e deixa somento o texto */
-	margin-left: 290px;
+	float: right;
 }
 
 li{  /*container da lista*/
@@ -45,12 +45,19 @@ li a{  /*elementos da lista*/
 	position: relative; /* relative faz a borda não vazar da box */
 	color: black;
 	text-align: center; /* alinha o texto ao centro */
-	padding: 14px 16px; /* espaçamento interno */
+	padding: 22px; /* espaçamento interno */
 	text-decoration: none; /* retira toda decoração do texto, nesse exemplo a sublinhado */
-	margin-top: 25px;
 	text-transform: uppercase; /* deixa o texto em caixa alta */
 	font-size: 25px;
 	font-family: 'Anton', sans-serif;
+}
+
+.bordabaixo{ /* deixa o botão da pagina que está aberta marcado como sublinhado */
+	position: absolute; /* faz o posicionamento em relação a div pai, no caso div "a" */
+	left: 0;
+    right: 0;
+	bottom: 1px;
+	border-bottom: 7px solid red;
 }
 
 li a:hover:before { /* efeito no botão da nav */
@@ -63,8 +70,8 @@ li a:before { /* efeito no botão da nav */
   content: "";
   position: absolute;
   width: 100%;
-  height: 4px;
-  bottom: 10px;
+  height: 7px;
+  bottom: 1px;
   left: 0;
   background-color: red;
   visibility: hidden;
@@ -78,7 +85,7 @@ li a:before { /* efeito no botão da nav */
 /*################################# INDEX #####################*/
 
 main{ /* corpo so site, tirando o header e o footer */
-	margin: 150px auto 0 auto;
+	margin: 150px auto 0 auto; /* topo direita inferior esquerda */
 	width: 1100px;
 	height: auto;
 }
@@ -181,7 +188,7 @@ main{ /* corpo so site, tirando o header e o footer */
 
 .cxmeio{ /* caixa que serve para segurar a div de texto e fotos*/
 	float: left;
-	width: 650px;
+	width: 645px;
 	height: 650px;
 	margin: 25px 0 25px 25px; /* topo direita inferior esquerda */
 }
@@ -193,7 +200,7 @@ main{ /* corpo so site, tirando o header e o footer */
 	box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.4);
 }
 
-.cxtext h2{ /*titulo do texto*/
+.cxtext h1{ /*titulo do texto*/
 	padding: 30px;
 	text-transform: uppercase;
 	text-decoration: underline red;
@@ -213,13 +220,13 @@ main{ /* corpo so site, tirando o header e o footer */
 }
 
 .cximgbox{ /*div que contem as caixas com imagens*/
-	display: inline-block; /* faz as 3 caixas ficaram uma do lado da outra */
+	display: inline-block;
 	width: 200px;
 	height: 200px;
-	margin: 50px 11px 25px 0px;
+	margin: 50px 8px 0 0 ; /* topo direita inferior esquerda */
 	background-color: orange;
 	overflow: hidden; /* faz com que a imagem nao vaze do tamanho da caixa */
-	border: 1px solid black; /* borda de cada caixa*/
+	border: 2px solid black; /* borda de cada caixa*/
 	box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.4);
 }
 
@@ -229,12 +236,12 @@ main{ /* corpo so site, tirando o header e o footer */
 	width: 1100px;
 	height: 550px;
 	margin-bottom: 80px;
-	background-color: #1b2e5f;
+	background-color: #17458a;
 	box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.4);
 }
 
 .img-goku-trans{ /*imagem png que flutua a direita*/
-	margin: 0px 60px 0px 0px;
+	margin: 8px 60px 0px 0px;
 	float: right;
 }
 
@@ -282,12 +289,12 @@ main{ /* corpo so site, tirando o header e o footer */
 
 .img-goku-fu2{ /*imagem png que flutua a direita*/
 	float: right;
-	margin: 15px;
+	margin: 25px 10px 0 0  ; /* topo direita inferior esquerda */
 }
 
 .img-goku-fu3{ /*imagem png que flutua a direita*/
 	float: right;
-	margin: 15px;
+	margin: 28px;
 }
 
 /*########################### TECNICAS ####################*/
@@ -304,7 +311,7 @@ main{ /* corpo so site, tirando o header e o footer */
 	width: 1100px;
 	height: 550px;
 	margin-bottom: 80px;
-	background-image: url(../image/tecback2.jpg) ;
+	background-image: url(../image/tecback2.jpg); /* usa uma imagem como background, ".." antes do / faz o caminho voltar uma pasta, para depois entrar na /image */
 	box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.4);
 }
 
@@ -349,14 +356,14 @@ main{ /* corpo so site, tirando o header e o footer */
 	margin: 20px;
 	width: 450px;
 	height: 247px;
-	font-size: 18px;
-	text-align: justify;
+	font-size: 18px; /*tamanho da fonte*/
+	text-align: justify; /* faz o texto ficar alinhado nas pontas, como uma se tivesse dentro de uma caixa */
 	
 }
 
 .contatobox1 h1{  /*titulo da div*/
-	text-transform: uppercase;
-	text-decoration: underline red;	
+	text-transform: uppercase; /* coloca o texto em caixa alta*/
+	text-decoration: underline red;	/* coloca sublinhado no texto e deixa na cor vermelha */
 }
 
 #formulario{  /*container do formulario*/
@@ -372,7 +379,7 @@ main{ /* corpo so site, tirando o header e o footer */
 
 #formulario div input{ /*input do nome e email*/
 	background-color: #fae5cc;
-	border: 1px solid #f2c085;
+	border: 1px solid #f2c085; /*adiciona borda */
 	width: 500px;
 	height: 28px;
 	font-size: 15px;
@@ -385,7 +392,7 @@ main{ /* corpo so site, tirando o header e o footer */
 	width: 500px;
 	height: 135px;
 	font-size: 15px;
-	resize: none;	
+	resize: none; /* elemento que deixa o usario redimensionar o tamanho da div, none tira essa propriedade */
 }
 
 #formulario .BOTAO{ /*div do botão*/
@@ -393,10 +400,7 @@ main{ /* corpo so site, tirando o header e o footer */
 	height: 30px;
 	font-size: 16px;
 	color: #fff;
-	margin-right: 0px;
-	margin-left: 20px;
-	margin-bottom: 15px;
-	margin-top: 13px;
+	margin: 13px 0 15px 20px; /* topo direita inferior esquerda */
 	float: right;
 }
 
@@ -409,14 +413,19 @@ main{ /* corpo so site, tirando o header e o footer */
 #LIMPAR { /*div do botão*/
 	background-color: red;
 	border: 1px solid #b89898;
-	cursor: pointer;
+	cursor: pointer; /* faz aparecer a mãozinha quando passar em cima */
+}
+
+#formulario1 h1{ 
+	padding: 100px 20px 0 0 ; /* topo direita inferior esquerda */
+	text-align: center;
 }
 
 footer{ /*rodapé*/
 	width: 100%;
 	height: 150px;
 	background-color: #00002b;
-	text-align: center;
+	text-align: center; /*alinha o texto ao centro */
 	color: white;
 	padding-top: 50px;
 }
