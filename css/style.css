@@ -136,7 +136,7 @@ main{ /* corpo so site, tirando o header e o footer */
   color: black;
 }
 
-/*########################### LUTAS ####################*/
+/*########################### LUTAS ###########################*/
 
 .cx{ /*caixa que serve de background*/
 	width: 1100px;
@@ -420,6 +420,8 @@ main{ /* corpo so site, tirando o header e o footer */
 	padding: 100px 20px 0 0 ; /* topo direita inferior esquerda */
 	text-align: center;
 }
+
+/*########################### FOOTER ####################*/
 
 footer{ /*rodapé*/
 	width: 100%;
