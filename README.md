@@ -9,6 +9,10 @@ LightBox:
 
 https://lokeshdhakar.com/projects/lightbox2
 
+### Site com paleta de cores:
+
+https://coolors.co/palettes
+
 ### Site referências:
 
 https://dragonball.fandom.com/pt-br/wiki/Dragon_Ball_Wiki
