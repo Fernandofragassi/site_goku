@@ -3,8 +3,7 @@
 *{
 	margin: 0;
 	padding: 0;	
-	font-family: "Roboto", calibri;
-	
+			
 }
 
 header{  /*caixa que serve de background do menu superior*/
@@ -13,7 +12,7 @@ header{  /*caixa que serve de background do menu superior*/
 	top: 0;	 /*margem do top*/
 	width: 100%; /* largura da div, 100% ocupa toda pagina independete do tamanho*/
 	height: 80px; /* largura*/
-	background-color: rgb(255, 174, 0); /*Cor de fundo*/
+	background-color: #ff9f1c; /*Cor de fundo*/
 	box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.8); /* efeito da sombra ( deslocamento-x, deslocamento-y, blur, cor) */
 	z-index: 1; /* propriedade para ordem de pilha, pilha maior está sempre na frente de um elemento com uma ordem de pilha inferior*/
 	border-bottom: 1px solid black /* borda do elemento */		
@@ -26,8 +25,7 @@ nav{  /*menu de navegação*/
 }
 
 .logo{  /*logo da pagina*/
-	
-	margin-top: 5px;
+	padding: 4px;
 	float: left; /* faz o elemento ser retirado do fluxo normal, colocando ao lado direito ou esquerdo da div pai*/
 }
 
@@ -88,6 +86,7 @@ main{ /* corpo so site, tirando o header e o footer */
 	margin: 150px auto 0 auto; /* topo direita inferior esquerda */
 	width: 1100px;
 	height: auto;
+	font-family: "Roboto", calibri, sans-serif;
 }
 
 .img-goku{ /* imagem do goku do index */
@@ -104,7 +103,7 @@ main{ /* corpo so site, tirando o header e o footer */
 	width: 1100px;
 	height: 550px;
 	margin-bottom: 80px;
-	background-color: red;
+	background-color: #e71d36;
 	box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.4);
 }
 
@@ -112,7 +111,7 @@ main{ /* corpo so site, tirando o header e o footer */
 	width: 1100px;
 	height: 600px;
 	margin-bottom: 80px;
-	background-color: red;
+	background-color: #e71d36;
 	box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.4);
 }
 
@@ -276,7 +275,7 @@ main{ /* corpo so site, tirando o header e o footer */
 	width: 1100px;
 	height: 550px;
 	margin-bottom: 80px;
-	background-color: #17458a;
+	background-color: #239e92;
 	box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.4);
 }
 
@@ -382,7 +381,7 @@ main{ /* corpo so site, tirando o header e o footer */
 }
 
 .contbox{ /*caixa que serve de background*/
-	background-color:rgb(255, 166, 0);
+	background-color: #ff9f1c;
 	width: 1100px;
 	height: 350px;
 	margin-bottom: 80px;
@@ -466,9 +465,12 @@ main{ /* corpo so site, tirando o header e o footer */
 footer{ /*rodapé*/
 	width: 100%;
 	height: 150px;
-	background-color: #00002b;
+	background-color: #011627;
 	text-align: center; /*alinha o texto ao centro */
 	color: white;
 	padding-top: 50px;
 }
 
+footer a{
+	margin-right: 10px
+}
