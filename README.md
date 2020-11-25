@@ -1,4 +1,4 @@
-<h1>Site efeito para o personagem Goku do Dragon Ball<\h1>
+# Site efeito para o personagem Goku do Dragon Ball
 
 Scripts usados:
 
