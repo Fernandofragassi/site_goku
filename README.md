@@ -2,7 +2,8 @@
 
 ### Scripts usados:
 
-OAS javascript
+OAS javascript:
+
 https://michalsnik.github.io/aos
 
 LightBox:
