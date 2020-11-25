@@ -1,6 +1,6 @@
 # Site efeito para o personagem Goku do Dragon Ball
 
-Scripts usados:
+### Scripts usados:
 
 OAS javascript
 https://michalsnik.github.io/aos
@@ -9,7 +9,7 @@ LightBox:
 
 https://lokeshdhakar.com/projects/lightbox2
 
-Site referencias:
+### Site referências:
 
 https://dragonball.fandom.com/pt-br/wiki/Dragon_Ball_Wiki
 
