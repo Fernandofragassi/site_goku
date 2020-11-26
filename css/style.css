@@ -173,7 +173,7 @@ main{ /* corpo so site, tirando o header e o footer */
 	font-size: 2rem;
 	font-weight: bold;
 	color: black;
-  }
+}
 
 .cxtext1 p:first-letter { /* faz a primeira letra do paragrafo ficar maior que o restante do texto*/
   font-size: 2rem;
