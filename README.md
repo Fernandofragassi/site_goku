@@ -19,3 +19,4 @@ https://coolors.co/palettes
 https://dragonball.fandom.com/pt-br/wiki/Dragon_Ball_Wiki
 
 https://www.legiaodosherois.com.br/lista/dragon-ball-melhores-lutas.html#list-item-1
+[![GitHub issues](https://img.shields.io/github/issues/Fernandofragassi/site_goku?style=for-the-badge)](https://github.com/Fernandofragassi/site_goku/issues)
